@@ -1,0 +1,6 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: [ 'build', 'gcr.io/assuris-0/zeek-docker', '3.0.0.Dockerfile'  ]
+  env: ['MAXMIND_LICENSE_KEY=htHutgSBcVCw70BW']
+images:
+- 'gcr.io/$PROJECT_ID/zeek-docker'
